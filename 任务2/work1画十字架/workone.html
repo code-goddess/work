@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>5个div做一个十字架</title>
+</head>
+<style type="text/css">
+div {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #000;
+}
+
+.content {
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.top {
+    top: -100px;
+    -webkit-box-shadow: 7px 7px 5px 10px rgba(0, 0, 0, .6);
+}
+
+.left {
+    left: -100px;
+    -webkit-box-shadow: 7px 5px 5px 10px rgba(0, 0, 0, .6);
+}
+
+.middle {
+    background-image: url(duck.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right {
+    right: -100px;
+    -webkit-box-shadow: 7px 5px 5px 10px rgba(0, 0, 0, .6);
+}
+
+.bottom {
+    bottom: -100px;
+    -webkit-box-shadow: 7px 5px 5px 10px rgba(0, 0, 0, .6);
+}
+</style>
+
+<body>
+    <div class="content">
+        <div class="top">top</div>
+        <div class="left">left</div>
+        <div class="middle">middle</div>
+        <div class="right">right</div>
+        <div class="bottom">bottom</div>
+    </div>
+</body>
+
+</html>
