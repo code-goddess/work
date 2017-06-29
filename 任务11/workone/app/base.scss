@@ -1,0 +1,69 @@
+@mixin frame($w,$h:auto,$bg:none){
+	width:$w;
+	height:$h;
+	background:$bg;
+}
+@mixin reset{
+	margin:0;
+	padding:0;
+}
+@mixin margin($t:0,$l:0,$r:0,$b:0){
+	margin-top:$t;
+	margin-left:$l;
+	margin-right:$r;
+	margin-bottom:$b;
+}
+@mixin border($c){
+	border:1px solid $c;
+}
+@mixin box-shadow{
+	-webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+	-ms-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+	cursor: pointer;
+}
+@mixin basebox($w:100%,$b:auto,$t:10px){
+	width: $w;
+    height: $b;
+    margin-top: $t;
+}
+@mixin agree($bg){
+	display: block;
+    width: 100%;
+    height: 140px;
+	background:$bg no-repeat; 
+}
+a>button:hover {
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+a{
+	text-decoration: none;
+}
+ul>li:hover {
+    color: rgb(95, 173, 94);
+    cursor: pointer;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(245, 245, 245);
+}
+/**下拉框*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    .dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: #f9f9f9;
+	    min-width: 110px;
+	    height: 140px;
+	    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	}
+	&:hover .dropdown-content {
+	    display: block;
+	}
+}

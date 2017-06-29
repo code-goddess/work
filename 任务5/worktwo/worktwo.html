@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>开发简易计算器</title>
+</head>
+<body>
+	<div>
+		<input id="num1" type="text" name="one">
+		<select id="ope">
+			<option value="plus">+</option>
+			<option value="minus">-</option>
+			<option value="multiply">*</option>
+			<option value="divide">/</option>
+		</select>
+		<input id="num2" type="text" name="two">
+		<span id="result" style="color: green; font-size: 18px;"></span>
+		<button onclick="calc()">计算</button>
+	</div>
+	<script type="text/javascript">
+		function calc() {
+			var num1 = parseInt(document.getElementById("num1").value);
+			var num2 = parseInt(document.getElementById("num2").value);
+			var operator = document.getElementById("ope").value;
+			var sum = calculate(num1,num2,operator);
+			// alert(sum);
+			document.getElementById("result").innerText = "=" + sum;
+		}
+		function calculate(n1,n2,oper) {
+			switch (oper){
+				case "plus":
+				    return n1 + n2;
+				case "minus":
+				    return n1 - n2;
+				case "multiply":
+				    return n1 * n2;
+				case "divide":
+				    return n1 / n2;
+				default:
+				    return "未知操作符";
+			}
+		}
+	</script>
+</body>
+</html>

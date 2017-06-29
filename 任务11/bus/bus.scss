@@ -1,0 +1,88 @@
+
+@mixin frame($w:100%,$h:auto,$bg:none,$tac:center){
+	width:$w;
+	height:$h;
+	background:$bg;
+	text-align: $tac;
+}
+@mixin flex {
+	-webkit-display: flex;
+	display: flex;
+}
+@mixin justify{
+	-webkit-justify-content:space-between;
+	justify-content:space-between;
+}
+.box{
+	@include frame(800px,100%,#146f67);
+	margin: 100px auto;
+	border: 20px solid #146f67;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.stopName{
+	 @include frame(800px,150px,#146f67);
+	 margin-top: -23px;
+	 h1{font-size: 35px;
+    padding-top: 20px;}
+}
+.busInfo{
+	@include frame(800px,250px);
+	@include flex;
+	margin: 20px 0 0 0;
+	.busName{
+	@include frame(200px,250px,#0b4373);
+	h2{
+	  font-size: 47px;
+      color: #803500;
+	}
+  }
+  .busLine{
+  	@include frame(600px,250px,#eee);
+  	h3{
+  	@include frame(600px,30px,#ccc);
+  	font-size: 20px;
+  	margin:0;
+  	padding:5px 0;
+  	}
+  	.cava{@include frame(600px,40px);}
+  }
+  .stop{
+  	@include frame(580px,110px,#eee);
+  	@include flex;
+  	@include justify;
+  	margin:0;
+  	padding:30px 10px;
+  	list-style: none;
+  }
+  .stop li {
+       float: left;
+       @include frame(20px,140px);
+  }
+  .mydiv{
+    @include frame(500px,5px);
+    position: relative;
+    display: inline-block;
+    margin: 10px 10px;
+    &:before,&:after{
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+    }
+  }
+
+.arrow-right {
+  &:before{
+    border: none;
+    @include frame(100%,30%,#803500);
+    top: 35%;
+    left: 0;
+  }
+  &:after{
+    left: 96%;
+    top: -8px;
+    border-width: 10px 30px;
+    border-left-color: #803500;
+  }   
+}
+}

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <title>王芳的作业三</title>
+    <meta name="keywords" content="任务一">
+    <meta name="author" content="王芳">
+    <meta name="description" content="仿写百度首页">
+    <link rel="stylesheet" type="text/css" href="./workone.css">
+</head>
+
+<body>
+    <!--导航上的链接-->
+    <!-- <div style="width:1000px; height:200px; background:red;"></div> -->
+    <header>
+        <nav>
+            <ul class="lefttit">
+                <li>北京</li>
+                <li class="skin">换肤</li>
+            </ul>
+            <ul class="navtit">
+                <li>
+                    <a href="http://news.baidu.com/" target="_blank">新闻</a>
+                </li>
+                <li>
+                    <a href="http://www.hao123.com/" target="_blank">hao123</a>
+                </li>
+                <li>
+                    <a href="http://map.baidu.com/" target="_blank">地图</a>
+                </li>
+                <li>
+                    <a href="http://v.baidu.com/" target="_blank">视频</a>
+                </li>
+                <li>
+                    <a href="http://tieba.baidu.com/" target="_blank">贴吧</a>
+                </li>
+                <li>
+                    <!--给登录设置下拉框-->
+                    <div class="dropdown">
+                        <a href="http://i.baidu.com/" target="_blank" class="dropd-a">151****989</a>
+                        <div class="dropdown-content">
+                            <a href="http://vip.baidu.com/pcui/show/ucenterindex?vip_frm=super_account" target="_blank">我的vip</a>
+                            <a href="http://i.baidu.com/center" target="_blank">个人中心</a>
+                            <a href="http://passport.baidu.com/" target="_blank">账号设置</a>
+                            <a href="https://www.baidu.com/index.php?tn=monline_3_dg#" target="_blank">意见反馈</a>
+                            <a href="https://www.baidu.com/index.php?tn=monline_3_dg#" target="_blank">退出</a>
+                        </div>
+                    </div>
+                </li>
+                <!--给设置设置下拉框-->
+                <li class="dropdown">
+                    <a href="javascript:;" target="_blank" class="dropd-a">设置</a>
+                    <div class="dropdown-content">
+                        <a href="javascript:;" target="_blank">搜索设置</a>
+                        <a href="https://www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a>
+                        <a href="http://i.baidu.com/my/history?from=ps" target="_blank">搜索历史</a>
+                    </div>
+                </li>
+                <li>
+                    <!--给更多产品设置下拉框-->
+                    <div class="dropro">
+                        <a href="#" class="more-product" target="_blank">更多产品</a>
+                        <div class="dropro-content">
+                            <span>更多产品</span>
+                            <a href="http://www.baidu.com"><img src="img/music.png">
+                                <div>音乐</div>
+                            </a>
+                            <a href="http://image.baidu.com/"><img src="img/image.png">
+                                <div>图片</div>
+                            </a>
+                            <a href="http://zhidao.baidu.com/"><img src="img/zhidao.png">
+                                <div>知道</div>
+                            </a>
+                            <a href="http://wenku.baidu.com/"><img src="img/wenku.png">
+                                <div>文库</div>
+                            </a>
+                            <a href="http://top.baidu.com/"><img src="img/bang.png">
+                                <div>风云榜</div>
+                            </a>
+                            <a href="http://e.baidu.com/"><img src="img/tuiguang.png">
+                                <div>百度推广</div>
+                            </a>
+                            <a href="http://www.baidu.com/more/">全部产品>></a>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--图片和输入框部分-->
+    <article>
+        <form action="#">
+            <div class="logo-baidu"><img src="img/logo.png" alt="百度一下"></div>
+            <div class="biv-bor">
+                <hr class="soutu-line" />
+                <!--相机图标按钮-->
+                <span class="soutu-btn"></span>
+                <!--输入框-->
+                <input type="text" name="text" class="search">
+                <button type="submit">百度一下</button>
+            </div>
+        </form>
+        <!-- 内容部分 begin-->
+        <div class="box">
+            <!-- 标题 -->
+            <ul class="titlebox">
+                <li>我的关注</li>
+                <li class="tabin">推荐</li>
+                <li>导航</li>
+                <li>视频</li>
+            </ul>
+            <span class="setimg">
+                <ul class="setting">
+                    <li class="liked">
+                        <span>已订阅频道</span>
+            <div class="mycare">我的关注</div>
+            <div class="mylike loved"></div>
+            </li>
+            <li class="unlike">
+                <span>未订阅频道</span>
+                <div class="mylike uncare">
+                    <div class="mydiv">+小说</div>
+                    <div class="mydiv">+音乐</div>
+                    <div class="mydiv">+体育</div>
+                    <div class="mydiv">+视频</div>
+                    <div class="mydiv">+导航</div>
+                    <div class="mydiv">+推荐</div>
+                </div>
+            </li>
+            <hr>
+            </ul>
+            </span>
+            <!-- 关注 -->
+            <div class="care tab">
+                <ul class="care-con">
+                    <li id="caremenu">
+                        <span>我的星座</span>
+                        <ul class="dropmenu">
+                            <li>你还没有关注，赶快添加吧</li>
+                        </ul>
+                    </li>
+                    <li id="caremenu">
+                        <span>我的视频</span>
+                        <ul class="dropmenu">
+                            <li>你还没有关注，赶快添加吧</li>
+                        </ul>
+                    </li>
+                    <li id="caremenu">
+                        <span>我的导航</span>
+                        <ul class="dropmenu">
+                            <li>你还没有关注，赶快添加吧</li>
+                        </ul>
+                    </li>
+                    <li id="caremenu">
+                        <span>我的股票</span>
+                        <ul class="dropmenu">
+                            <li>你还没有关注，赶快添加吧</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>+自定义</span>
+                        <ul class="ourselfmenu">
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- 推荐 -->
+            <div class="content tab recommend">
+                <div class="news-box">
+                    <hr>
+                    <div class="h">
+                        <div class="lit-locn"></div>
+                        <span>以下信息根据你的兴趣推荐</span>
+                    </div>
+                    <div class="news1">
+                        <div class="newsimg"></div>
+                        <div class="newsinfo">
+                            <h3>英媒：俄罗斯海军首次用白鲸在北极执行军事任务</h3>
+                            <p>
+                                <span>中华网</span>
+                                <span>06-05 02:30</span>
+                                <span>热点</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news2">
+                        <h3>英媒：俄罗斯海军首次用白鲸在北极执行军事任务</h3>
+                        <div class="newsimg2"></div>
+                        <p>
+                            <span>中华网</span>
+                            <span>06-05 02:30</span>
+                            <span>热点</span>
+                        </p>
+                    </div>
+                    <div class="news1">
+                        <div class="newsimg"></div>
+                        <div class="newsinfo">
+                            <h3>英媒：俄罗斯海军首次用白鲸在北极执行军事任务</h3>
+                            <p>
+                                <span>中华网</span>
+                                <span>06-05 02:30</span>
+                                <span>热点</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news2">
+                        <h3>英媒：俄罗斯海军首次用白鲸在北极执行军事任务</h3>
+                        <div class="newsimg2"></div>
+                        <p>
+                            <span>中华网</span>
+                            <span>06-05 02:30</span>
+                            <span>热点</span>
+                        </p>
+                    </div>
+                    <div class="news1">
+                        <div class="newsimg"></div>
+                        <div class="newsinfo">
+                            <h3>英媒：俄罗斯海军首次用白鲸在北极执行军事任务</h3>
+                            <p>
+                                <span>中华网</span>
+                                <span>06-05 02:30</span>
+                                <span>热点</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fiexnews">
+                    <span>实时热点</span>
+                    <span>换一换</span>
+                    <ul>
+                        <li><a href="#">汶川男孩成空降兵</a></li>
+                        <li><a href="#">海清白衣耍剑太极</a></li>
+                        <li><a href="#">杨幂公公同车出行</a></li>
+                        <li><a href="#">女博士误机掌掴</a></li>
+                        <li><a href="#">top发亲笔信致歉</a></li>
+                        <li><a href="#">可燃冰试采成功</a></li>
+                        <li><a href="#">天皇退位法案通过</a></li>
+                        <li><a href="#">日本飞机山区坠毁</a></li>
+                        <li><a href="#">英国再遭恐袭</a></li>
+                        <li><a href="#">中国援助斯里兰卡</a></li>
+                        <li><a href="#">百万豪车后轮着火</a></li>
+                        <li><a href="#">皇马卫冕欧冠冠军</a></li>
+                        <li><a href="#">篮球场广场舞冲突</a></li>
+                        <li><a href="#">军人背大妈下楼梯</a></li>
+                        <li><a href="#">柯文哲谈雨灾金句</a></li>
+                        <li><a href="#">勇士首战大胜骑士</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 导航 -->
+            <div class="navigation tab">
+                <ul class="like">
+                    <h4><b>猜你喜欢</b></h4>
+                    <li class="likeimg">
+                        <a href="#"><img src="./img/navigation/baidunuomi.png"><span>百度糯米</span></a>
+                    </li>
+                    <li class="likeimg">
+                        <a href="#"><img src="./img/navigation/jingdong.png"><span>京东商城</span></a>
+                    </li>
+                    <li class="likeimg">
+                        <a href="#"><img src="./img/navigation/yihaodian.png"><span>1号店</span></a>
+                    </li>
+                    <li class="likeimg">
+                        <a href="#"><img src="./img/navigation/suning.png"><span>苏宁易购</span></a>
+                    </li>
+                    <li class="likeimg">
+                        <a href="#"><img src="./img/navigation/weipinhui.png"><span>唯品会</span></a>
+                    </li>
+                    <li class="likeimg">
+                        <a href="#"><img src="./img/navigation/dang.png"><span>当当网</span></a>
+                    </li>
+                    <li class="likeimg">
+                        <a href="#"><img src="./img/navigation/yingcai.png"><span>中华英才网</span></a>
+                    </li>
+                    <li class="likeimg">
+                        <a href="#"><img src="./img/navigation/poter.png"><span>哈利波特</span></a>
+                    </li>
+                    <li class="likeimg">
+                        <a href="#"><img src="./img/navigation/xinlang.png"><span>新浪</span></a>
+                    </li>
+                    <li class="likeimg">
+                        <a href="#"><img src="./img/navigation/tenxun.png"><span>腾讯视频</span></a>
+                    </li>
+                </ul>
+                <ul class="info">
+                    <h4><b>资讯信息</b></h4>
+                    <li class="infoimg">
+                        <a href="#"><img src="./img/navigation/tenxunw.jpg"></a>
+                    </li>
+                    <li class="infoimg">
+                        <a href="#"><img src="./img/navigation/xinlangw.jpg"></a>
+                    </li>
+                    <li class="infoimg">
+                        <a href="#"><img src="./img/navigation/weibo.jpg"></a>
+                    </li>
+                    <li class="infoimg">
+                        <a href="#"><img src="./img/navigation/souhu.jpg"></a>
+                    </li>
+                    <li class="infoimg">
+                        <a href="#"><img src="./img/navigation/wangyi.jpg"></a>
+                    </li>
+                    <li class="infoimg">
+                        <a href="#"><img src="./img/navigation/mwcn.jpg"></a>
+                    </li>
+                    <li class="infoimg">
+                        <a href="#"><img src="./img/navigation/yangshiw.jpg"></a>
+                    </li>
+                    <li class="infoimg">
+                        <a href="#"><img src="./img/navigation/zgc.jpg"></a>
+                    </li>
+                </ul>
+                <ul class="play">
+                    <h4><b>娱乐休闲</b></h4>
+                    <li class="playimg">
+                        <a href="#"><img src="./img/navigation/iqiy.jpg"></a>
+                    </li>
+                    <li class="playimg">
+                        <a href="#"><img src="./img/navigation/youku.jpg"></a>
+                    </li>
+                    <li class="playimg">
+                        <a href="#"><img src="./img/navigation/qidian.jpg"></a>
+                    </li>
+                    <li class="playimg">
+                        <a href="#"><img src="./img/navigation/tudou.jpg"></a>
+                    </li>
+                    <li class="playimg">
+                        <a href="#"><img src="./img/navigation/letv.jpg"></a>
+                    </li>
+                    <li class="playimg">
+                        <a href="#"><img src="./img/navigation/3dm.jpg"></a>
+                    </li>
+                    <li class="playimg">
+                        <a href="#"><img src="./img/navigation/4399.jpg"></a>
+                    </li>
+                    <li class="playimg">
+                        <a href="#"><img src="./img/navigation/bili.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 视频 -->
+            <div class="video tab">
+                <div class="main">
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/1.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/2.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/3.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/4.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/5.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/6.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div style="width: 74%;float: left;">
+                        <div class="photobox">
+                            <div class="pic">
+                                <img src="./img/vidio/7.jpg">
+                                <p><a href="#">海绵宝宝</a></p>
+                            </div>
+                        </div>
+                        <div class="photobox">
+                            <div class="pic">
+                                <img src="./img/vidio/8.jpg">
+                                <p><a href="#">海绵宝宝</a></p>
+                            </div>
+                        </div>
+                        <div class="photobox">
+                            <div class="pic">
+                                <img src="./img/vidio/9.jpg">
+                                <p><a href="#">海绵宝宝</a></p>
+                            </div>
+                        </div>
+                        <div class="photobox">
+                            <div class="pic">
+                                <img src="./img/vidio/11.jpg">
+                                <p><a href="#">海绵宝宝</a></p>
+                            </div>
+                        </div>
+                        <div class="photobox">
+                            <div class="pic">
+                                <img src="./img/vidio/12.jpg">
+                                <p><a href="#">海绵宝宝</a></p>
+                            </div>
+                        </div>
+                        <div class="photobox">
+                            <div class="pic">
+                                <img src="./img/vidio/13.jpg">
+                                <p><a href="#">海绵宝宝</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/10.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/14.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/15.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/16.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/17.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/18.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                    <div class="photobox">
+                        <div class="pic">
+                            <img src="./img/vidio/19.jpg">
+                            <p><a href="#">海绵宝宝</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 设置-->
+            <!-- <div class="setting">设置</div> -->
+        </div>
+        <!-- 内容部分 end-->
+    </article>
+    <!--页脚-->
+    <footer>
+        <div>
+            <a href="https://www.baidu.com/cache/sethelp/index.html" target="_blank">把百度设为主页</a>
+            <a href="http://www.baidu.com">关于百度</a>
+            <a href="http://www.baidu.com"> About Baidu</a>
+        </div>
+        <p>
+            <span>@2015 Baidu</span>
+            <a href="https://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
+            <a href="http://jianyi.baidu.com/">意见反馈</a>
+            <span>京ICP证030173号</span>
+        </p>
+    </footer>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="workone.js"></script>
+</body>
+
+</html>

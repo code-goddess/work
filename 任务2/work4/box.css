@@ -1,0 +1,125 @@
+/**************标准盒模型******************/
+
+.border {
+    padding: 10px;
+    margin: 50px auto;
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+
+.content {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+
+
+/**************怪异盒模型******************/
+
+.border1 {
+    padding: 10px;
+    margin: 50px auto;
+    border: 5px solid black;
+    width: 130px;
+    height: 130px;
+    background: green;
+    box-sizing: border-box;
+}
+
+.content1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+
+/**************弹性盒模型******************/
+
+
+/*column分栏*/
+
+.column {
+    -webkit-column-count: 2;
+    -webkit-column-rule-style: dashed;
+    -webkit-column-gap: 20px;
+}
+
+.image {
+    width: 100%;
+}
+
+
+/*纵向排列*/
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: lightgrey;
+    float: left;
+    margin: 10px;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+
+/*横向排列*/
+
+.container1 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    width: 200px;
+    height: 200px;
+    background-color: lightgrey;
+    float: left;
+    margin: 10px;
+}
+
+
+/*排序*/
+
+.container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: lightgrey;
+    float: left;
+    margin: 10px;
+}
+
+.first {
+    -webkit-order: -1;
+    order: -1;
+}
+
+
+/*旧弹性盒模型*/
+
+.oldbox {
+    width: 700px;
+    height: 400px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background: yellow;
+    margin: auto;
+}
+
+.imageold {
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+}

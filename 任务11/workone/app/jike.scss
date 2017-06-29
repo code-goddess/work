@@ -1,0 +1,371 @@
+@import "base";
+/*********头部标题 start*************/
+.header{
+	@include frame(100%,60px,rgb(255, 255, 255));
+}
+.head-content{
+    @include frame(1000px);
+    margin-left: 12%;
+    a{
+	    text-decoration: none;
+	    font-size: 15px;
+		color: #000;
+		&:hover{
+			color: rgb(95, 173, 94);
+		}
+    }
+    .logo{
+	    @include frame(114px,42px,url(image/titlelogo.png) no-repeat);
+	    margin-top:9px;
+	    float: left;
+	    border: 0;
+    }
+    .title{
+	    @include frame(395px,25px);
+	    @include margin(18px,30px);
+	    float: left;
+	    list-style:none;
+	    li{
+		    @include reset;
+		    margin-right: 30px;
+		    float:left;
+	    }
+    }
+    .icon-title{
+	    @include basebox(330px,25px,18px);
+	    float: right;
+	    li{
+		    float:right;
+		    margin-right:20px;
+		    list-style:none;
+	    }
+
+    }
+}
+/*********头部标题 end***************/
+
+/*********内容区域 start*************/
+.container {
+    @include frame(1000px);
+    margin-left: 12%;
+}
+/**1,海报区域**/
+.banner {
+    @include basebox(100%,332px,10px);
+    .images {
+	    @include frame(752px,332px,url("https://a1.jikexueyuan.com/home/201704/13/134e/58ef39eb56313.jpg"));
+	    float: left;
+	    cursor: pointer;
+	}
+	.user {
+	    @include frame(242px,332px);
+	    float: right;
+	    position: relative;
+	}
+	.userlogin{
+	    @include frame(242px,160px,rgb(255, 255, 255));
+	    position: relative;
+	    .usericon {
+		    display: block;
+		    @include frame(160px,54px,url(image/usericon.png) no-repeat);
+		    position: absolute;
+		    left: 41px;
+		    top: 20px;
+		}
+		.study {
+		    @include frame(180px,34px,rgb(255, 255, 255));
+		    border: 1px solid rgb(95, 173, 94);
+		    color: rgb(95, 173, 94);
+		    position: absolute;
+		    top: 100px;
+		    left: 30px;
+		    font-size: 15px;
+		    &:hover{
+			    background: rgb(95, 173, 94);
+			    color: #fff;
+		    }
+		}
+	}
+	.userenter {
+	    display: block;
+	    @include frame(242px,160px,url(image/enter.png) no-repeat);
+	    position: absolute;
+	    bottom: 0;
+	}
+}
+/**2,线上就业班**/
+.onlineclass {
+    @include basebox(100%,202px);
+    .class1 {
+	    @include frame(372px,161px);
+	    float: left;
+	    position: relative;
+	    a{
+		     @include frame(372px,75px);
+		     &:hover{
+		     @include box-shadow;
+		     }
+	    }
+	    .web-class{
+		    position: absolute;
+		    top: 0;
+	    }
+	    .java-class {
+		    position: absolute;
+		    bottom: 0;
+		}
+	}
+	.class2 {
+	    @extend .class1;
+	    margin-left: 7px;
+	    .php-class{
+		    position: absolute;
+		    top: 0;
+	    }
+	    .ui-class {
+		    position: absolute;
+		    bottom: 0;
+		}
+	}
+	.class3 {
+	    @include frame(241px,161px);
+	    float: right;
+	    &:hover{@include box-shadow;}
+	}
+}
+/**3,专业精品课**/
+.profess-class{
+    @include basebox(100%,312px);
+    a:hover{@include box-shadow;}
+    .andr-class {
+	    @include frame(235px,271px,url(image/android.png) no-repeat);
+	    float: left;
+	}
+	.movie-class {
+	    @include frame(235px,271px,url(image/movie.png) no-repeat);
+	    float: left;
+	    margin-left: 20px;
+	}
+	.python-class {
+	    @include frame(235px,271px,url(image/python.png) no-repeat);
+	    float: left;
+	    margin-left: 20px;
+	}
+	.js-class {
+	    @include frame(235px,271px,url(image/js.png) no-repeat);
+	    float: right;
+	}
+}
+/**4,线下培训专区**/
+.train{
+    @include basebox(100%,619px);
+}
+.agreeclass{
+    @include frame(100%,280px);
+    .agreeclass1 {
+	    @include frame(478px,100%,url(train/agree1.png) no-repeat);
+	    float: left;
+	    &:hover{background: url(train/agreesel1.png) no-repeat}
+	}
+	.agreeclass2 {
+	    @include frame(261px,100%);
+	    float: left;
+	}
+	.agreeclass3 {
+	    @include frame(261px,100%);
+	    float: right;
+	}
+	.agreetop1 {
+	    @include agree(url(train/agreesel2.png));
+	    &:hover{background: url(train/agree2.png) no-repeat}
+	}
+	.agreebottom1 {
+	    @include agree(url(train/agree3.png));
+	    &:hover{background: url(train/agreesel3.png) no-repeat}
+	}
+	.agreetop2 {
+	    @include agree(url(train/agree4.png));
+	    &:hover{background: url(train/agreesel4.png) no-repeat}
+	}
+	.agreebottom2 {
+	    @include agree(url(train/agree4.png));
+	    &:hover{background: url(train/agreesel5.png) no-repeat}
+	}
+
+}
+.pressureclass {
+    @include frame(100%,280px,20px);
+    .pressclass1 {
+	    @include frame(478px,100%,url(train/agree1.png) no-repeat);
+	    float: left;
+	    &:hover{background: url(train/presssel1.png) no-repeat}
+	}
+	.agreeclass2 {
+	    @include frame(261px,100%);
+	    float: left;
+	}
+	.agreeclass3 {
+	    @include frame(261px,100%);
+	    float: right;
+	}
+	.presstop1 {
+	    @include agree(url(train/press2.png));
+	    &:hover{background: url(train/presssel2.png) no-repeat}
+	}
+	.pressbottom1 {
+	    @include agree(url(train/press3.png));
+	    &:hover{background: url(train/presssel3.png) no-repeat}
+	}
+	.presstop2 {
+	    @include agree(url(train/press4.png));
+	    &:hover{background: url(train/presssel4.png) no-repeat}
+	}
+	.pressbottom2 {
+	    @include agree(url(train/press5.png));
+	    &:hover{background: url(train/presssel5.png) no-repeat}
+	}
+}
+/**5,职业学院**/
+.college {
+    @include basebox(100%,310px);
+    .htmlclass {
+	    @include frame(501px,271px,url(image/web-college.png) no-repeat);
+	    border:0;
+	    float: left;
+	}
+	.middleclass {
+	    @include frame(242px,271px);
+	    float: left;
+	    margin-left: 7px;
+	    position: relative;
+	}
+	.python-web {
+	    @include frame(100%,132px,url(image/python-college.png) no-repeat);
+	    border:0;
+	}
+	.ios {
+	    @include frame(100%,132px,url(image/ios-college.png) no-repeat);
+	    border:0;
+	    position: absolute;
+	    bottom: 0;
+	}
+	.rightclass {
+	    @include frame(242px,271px);
+	    float: right;
+	    position: relative;
+	}
+	.go {
+	    @include frame(100%,132px,url(image/go-college.png) no-repeat);
+	    border:0;
+	}
+	.wechat {
+	    @include frame(100%,132px,url(image/wechat-college.png) no-repeat);
+	    border:0;
+	    position: absolute;
+	    bottom: 0;
+	}
+}
+/**6,会员课程**/
+.vipclass {
+    @include basebox(100%,425px);
+    .vip {
+	    @include frame(158px,310px);
+	    float: left;
+	    margin-right: 10px;
+	    position: relative;
+	    &:first-chid {
+		    margin-left: 0;
+		}
+		&:last-child {
+		    float: right;
+		    margin-right: 0;
+		}
+		img:hover{@include box-shadow;}
+	}
+	[id^=top] {
+	    @include frame(158px,150px);
+	}
+
+	[id^=bottom] {
+	    @include frame(158px,150px);
+	    position: absolute;
+	    bottom: 0;
+	}
+}
+#allclass {
+	    @include frame(115px,35px,rgb(245, 245, 245));
+	    font-size: 15px;
+	    color: rgb(95, 173, 94);
+	    border-radius: 3px;
+	    @include margin(20px,44%);
+	    border: 1px solid rgb(95, 173, 94);
+	    &:hover{
+		    background: rgb(95, 173, 94);
+		    color: #fff;
+	    }
+	}
+/**7,学员故事**/
+.studentshow {
+    @include basebox(100%,305px);
+    .info {
+	    @include frame(100%,121px,url(image/info.png) no-repeat);
+	    border:0;
+	}
+	.people {
+	    display: block;
+	    @include frame(172px,70px,url(image/people.png) no-repeat);
+	    border:0;
+	    margin: 10px 0;
+	}
+	.story {
+	    @include frame(322px,204px);
+	    float: left;
+	    margin-right: 17px;
+	    &:last-child{
+		    float: right;
+		    margin-right: 0;}
+	}
+}
+/**8,合作企业**/
+.coopercompany{
+    @include basebox(100%,235px);
+    img:hover{@include box-shadow;}
+}
+
+/*********内容区域 end***************/
+
+
+/*********footer start***************/
+.footer {
+    background: rgb(255, 255, 255);
+    margin-top: 0;
+}
+
+.footer-container {
+    @include frame(1000px,240px);
+    margin-left: 12%;
+    position: relative;
+    ul {
+	    font-size: 13px;
+	    color: gray;
+	    list-style-type: none;
+	    line-height: 30px;
+	    @include margin(0,-13px,76px);
+	    float:left;
+	}
+
+	ul>li:first-child {
+	    font-size: 15px;
+	    color: #6b6666;
+	}
+	.copyright,hr {
+	    clear:both;
+	    color: gray;
+	}
+	.copyright{
+	    margin-left: 15%;
+	    font-size: 13px;
+	}
+}
+/*********footer end***************/
+
